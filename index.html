@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- linking css file -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Products management using jQuery</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="products" class="products"></div>
+        <div id="panier" class="panier">
+            <h2>Panier</h2>
+          <table>
+            <tr>
+                <th>Produit</th>
+                <th>Quantité</th>
+                <th>Prix</th>
+                <th>Total</th>
+                <th>Action</th>
+            </tr>
+            <tbody id="panier-content">
+
+            </tbody>
+            <tr>
+                <td colspan="4">Total</td>
+                <td id="total-panier">0</td>
+            </tr>
+          </table>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- linking jquery library -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- linking js file -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "nom": "Samsung J2 Pro",
+        "image": "1.jpg",
+        "prix": 100.00,
+        "qte_Stock": 10,
+        "seuil": 15,
+        "catégorie": "SmartPhone"
+    },
+    {
+        "id": 2,
+        "nom": "HP Notebook",
+        "image": "2.png",
+        "prix": 299.00,
+        "qte_Stock": 20,
+        "seuil": 10,
+        "catégorie": "PC"
+    },
+    {
+        "id": 3,
+        "nom": "Iphone 15 pro max",
+        "image": "3.jpeg",
+        "prix": 1000.00,
+        "qte_Stock": 8,
+        "seuil": 12,
+        "catégorie": "SmartPhone"
+    }
+]
