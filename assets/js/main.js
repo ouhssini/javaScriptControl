@@ -67,7 +67,7 @@ $(function () {
                 <p class="product-price">MAD ${prod.prix}</p>
                 <input type="number" min="1" id="product-quantity-${prod.id}" class="product-quantity">
                 <div> <span class="error"  id="error-${prod.id}"></span>  </div>
-                <button class="add-to-cart" onclick="ajouterLigne(${prod.id})">Add to cart</button>
+                <button class="add-to-cart" onclick="ajouterLigne(${prod.id})">Ajouter au panier</button>
             </div>
             `;
             $("#products").append(p);
