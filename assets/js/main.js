@@ -22,6 +22,7 @@ let panier = [];
 
 // Function to add a line item to the shopping cart
 function ajouterLigne(idProduit) {
+    $(`#error-${idProduit}`).text("");
     $.getJSON("./assets/data/products.json", function (data) {
         let produit = data.find(p => p.id == idProduit);
         let qte = parseInt($(`#product-quantity-${idProduit}`).val());
@@ -35,6 +36,9 @@ function ajouterLigne(idProduit) {
             }
             $(`#product-quantity-${idProduit}`).val("");
             showPanier();
+        }else{
+            $(`#product-quantity-${idProduit}`).val("");
+            $(`#error-${idProduit}`).text("Veuillez entrer une quantité supérieure à 0");
         }
     });
 }
@@ -62,6 +66,7 @@ $(function () {
                 <h2 class="product-name">${prod.nom}</h2>
                 <p class="product-price">MAD ${prod.prix}</p>
                 <input type="number" min="1" id="product-quantity-${prod.id}" class="product-quantity">
+                <div> <span class="error"  id="error-${prod.id}"></span>  </div>
                 <button class="add-to-cart" onclick="ajouterLigne(${prod.id})">Add to cart</button>
             </div>
             `;

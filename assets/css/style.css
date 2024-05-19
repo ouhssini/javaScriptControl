@@ -6,12 +6,14 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    padding: 20px 0; 
+    padding: 20px 0;
 }
+
 .container {
     width: 80%;
     margin: 0 auto;
 }
+
 .products {
     padding-top: 30px;
     display: flex;
@@ -27,7 +29,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
     background-color: #fff;
@@ -68,6 +70,7 @@ body {
     cursor: pointer;
     margin-top: 10px;
 }
+
 .panier {
     margin-top: 20px;
 }
@@ -76,10 +79,11 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-  
+
 }
 
-table th, table td {
+table th,
+table td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
@@ -105,4 +109,9 @@ table tr:hover {
     border: none;
     background: none;
     font-size: 16px;
+}
+
+.error {
+    color: red;
+    font-size: 10px;
 }
